@@ -23,7 +23,7 @@ gsap.from('.page2 h3',{
 
 gsap.from('.page3',{
   scale:0,
-  duration:0.5,
+  duration:0.1,
   scrollTrigger:{
     scroller:'body',
     trigger:'.page3',
