@@ -25,7 +25,6 @@ gsap.from('.page3',{
   scale:0,
   duration:0.5,
   scrollTrigger:{
-    markers:true,
     scroller:'body',
     trigger:'.page3',
     start:'top 240%',
