@@ -90,7 +90,7 @@ body::-webkit-scrollbar{
 .thispc{
   position: absolute;
   z-index:9;
-  top:6%;
+  top:3%;
   left:2%;
   width:4vw;
   height:4vw;
@@ -99,7 +99,7 @@ body::-webkit-scrollbar{
 .bin{
   position: absolute;
   z-index:10;
-  top:21%;
+  top:17%;
   left:2%;
   width:4vw;
   height:4vw;
@@ -108,7 +108,7 @@ body::-webkit-scrollbar{
 .chrome{
   position: absolute;
   z-index:10;
-  top:34.5%;
+  top:30%;
   left:2%;
   width:4vw;
   height:4vw;
@@ -120,21 +120,21 @@ body::-webkit-scrollbar{
 } 
 
 .pctext{
-  top:15%;
+  top:12%;
   font-size: 0.8vw;
   font-weight: 500;
   color:white
 }
 
 .rbin{
-  top:30%;
+  top:26.5%;
   font-size: 0.8vw;
   font-weight: 500;
   color:white
 }
 
 .gchrome{
-  top:43%;
+  top:39%;
   font-size: 0.8vw;
   font-weight: 500;
   color:white
@@ -154,7 +154,6 @@ body::-webkit-scrollbar{
   top:25%;
   left:1%;
   height:1.5vw;
-
 }
 
 .mail{
@@ -185,4 +184,7 @@ body::-webkit-scrollbar{
 }
 
 
-
+.hover:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
