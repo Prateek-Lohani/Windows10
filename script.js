@@ -1,7 +1,7 @@
 gsap.from('.page1',
 {
-  x:-1000,
-  duration:2,
+  x:-500,
+  duration:1.2,
   scrollTrigger:{
     scroller:'body',
     trigger:'.page1',
