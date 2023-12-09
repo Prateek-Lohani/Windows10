@@ -146,10 +146,10 @@ input{
 
 .bottom-nav{
   width:100%;
-  height:5.7%;
+  height:6%;
   background-color: black;
   position: relative;
-  top:-5%;
+  top:-6.3%;
 }
 
 .logo{
@@ -291,6 +291,7 @@ input{
   background-color:rgba(235, 227, 227, 1);
 }
 
+
 .mycomputer .nav{
   width:100%;
   height:5%;
@@ -381,4 +382,77 @@ input{
   bottom:3%;
   border-radius: 40px;
   background-color: grey;
+}
+
+.windowsbar{
+  width:35%;
+  height:58%;
+  background-color: rgba(0, 0, 0, 0.797);
+  position: absolute;
+  border-radius: 5px;
+  bottom:1%;
+  display: none;
+}
+
+.systemtraybar{
+  width:15%;
+  height:20%;
+  background-color: rgba(0, 0, 0, 0.806);
+  position: absolute;
+  bottom:6%;
+  border-radius: 5%;
+  left:80%;
+  display: none;
+  padding:0.7% 0;
+  
+}
+
+
+.page3{
+  overflow: hidden;
+}
+.systemtraybar img{
+  width:20px;
+  height:20px;
+  margin:2%;
+
+}
+
+.leftbar{
+  width:10%;
+  height:95%;
+  /* background-color: red; */
+  padding:1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column
+}
+
+.windowsbar img:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.leftbar img{
+  width:70%;
+  height:70%;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+}
+.bottom img{
+  margin:20% 10%;
+}
+
+.overlay{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  z-index:9999;
+  display: none;
+  background-color: black;
 }

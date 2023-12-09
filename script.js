@@ -42,7 +42,14 @@ var originalscreen=document.querySelector('.ri-checkbox-multiple-blank-line')
 var opened=document.querySelector('.fmopened');
 var datetile=document.querySelector('.date');
 var timetile=document.querySelector('.time');
-
+var systemtray=document.querySelector('.systemtray')
+var systemtraywindow=document.querySelector('.systemtraybar')
+var displaysystemtray=true;
+var shutdown=document.querySelector('.shutdown');
+var overlay=document.querySelector('.overlay')
+var start=document.querySelector('.logo');
+var windowsbar=document.querySelector('.windowsbar');
+var minimize=document.querySelector('.minimize');
 var date=new Date();
 
 var currentDate=date.toJSON().slice(0, 10)
@@ -84,4 +91,46 @@ originalscreen.addEventListener('click',function(){
   screen.style.height='75%';
   fullscreen.style.display='initial';
   originalscreen.style.display='none'
+})
+
+systemtray.addEventListener('click',function(){ 
+  if(displaysystemtray===false){
+    displaysystemtray=!displaysystemtray;
+    systemtraywindow.style.display='inherit'
+    gsap.to('.systemtraybar',{
+      y:200,
+      duration:.5
+    })
+
+  }
+  else{
+    displaysystemtray=!displaysystemtray;
+    systemtraywindow.style.display='inherit'
+  gsap.from('.systemtraybar',{
+    y:200,
+    duration:.5
+  })
+  }
+})
+
+shutdown.addEventListener('click',function(){
+  overlay.style.display='inherit';
+  gsap.from('.overlay',{
+    x:-400,
+    duration:0.5
+  })
+})
+
+start.addEventListener('click',function(){
+  windowsbar.style.display='inherit';
+  gsap.from('.windowsbar',{
+    y:600,
+    duration:.7
+  })
+ 
+})
+
+minimize.addEventListener('click',function(){
+  screen.style.display='none';
+  opened.style.display='none'
 })
