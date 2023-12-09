@@ -196,6 +196,7 @@ input{
 
 .mycomputer{
   width:75%;
+  display: none;
   position: absolute;
   height:75%;
   top:50%;

@@ -34,3 +34,21 @@ gsap.from('.page3',{
 })
 
 
+var mypc=document.querySelector('.thispc');
+var screen=document.querySelector('.mycomputer');
+var close=document.querySelector('.close');
+
+mypc.addEventListener('dblclick',function(){
+  screen.style.display='initial'
+  gsap.from('.mycomputer',{
+    scale:0,
+    duration:.5,
+    scrub:2
+  }
+
+  )
+})
+
+close.addEventListener('click',function(){
+  screen.style.display='none'
+})
