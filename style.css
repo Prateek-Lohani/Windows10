@@ -96,6 +96,10 @@ body::-webkit-scrollbar{
   height:4vw;
 }
 
+input{
+  color:white;
+}
+
 .bin{
   position: absolute;
   z-index:10;
