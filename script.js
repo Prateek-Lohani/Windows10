@@ -40,7 +40,19 @@ var close=document.querySelector('.close');
 var fullscreen=document.querySelector('.ri-checkbox-blank-line');
 var originalscreen=document.querySelector('.ri-checkbox-multiple-blank-line')
 var opened=document.querySelector('.fmopened');
+var datetile=document.querySelector('.date');
+var timetile=document.querySelector('.time');
 
+var date=new Date();
+
+var currentDate=date.toJSON().slice(0, 10)
+
+var currentTime=date.toLocaleTimeString('en-GB', { hour: "numeric", 
+minute: "numeric"});
+
+console.log(currentDate)
+datetile.textContent=currentDate;
+timetile.textContent=currentTime;
 
 mypc.addEventListener('dblclick',function(){
   screen.style.display='initial'

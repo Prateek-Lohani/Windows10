@@ -160,11 +160,27 @@ input{
   height:1.5vw;
 }
 
+.cortana{
+  width:1.5vw;
+  position: absolute;
+  top:25%;
+  left:19.5%;
+  height:1.5vw;
+}
+
+.taskbar{
+  width:1.8vw;
+  position: absolute;
+  top:25%;
+  left:22%;
+  height:1.5vw;
+}
+
 .mail{
   width:1.8vw;
   position: absolute;
   top:25%;
-  left:19.5%;
+  left:28%;
   height:1.5vw;
 }
 
@@ -172,9 +188,79 @@ input{
   width:1.8vw;
   position: absolute;
   top:25%;
-  left:22.5%;
+  left:25%;
   height:1.5vw;
 }
+
+.onedrive{
+  width:1.8vw;
+  position: absolute;
+  top:25%;
+  left:86%;
+  height:1.5vw;
+}
+
+.wifi{
+  width:1.8vw;
+  position: absolute;
+  top:25%;
+  left:88.5%;
+  height:1.5vw;
+}
+
+.dateTime{
+  width:7%;
+  height:70%;
+  position: absolute;
+  top:20%;
+  left:93%;
+  /* background-color: white;  */
+}
+
+.dateTime p{
+  font-size: 0.8rem;
+  font-weight: 600;
+  color:white;
+}
+
+.date{
+  position: relative;
+  top:32%;
+  text-align: right;
+}
+
+.time{
+  position: relative;
+  top:-10%;
+  margin-left: 30%;
+}
+
+.messages{
+  width:2.5vw;
+  position: absolute;
+  top:12%;
+  left:97.5%;
+  height:2.3vw;
+}
+
+.battery{
+    width:1.5vw;
+    position: absolute;
+    top:25%;
+    left:91%;
+    height:1.5vw;
+  
+}
+
+.systemtray{
+  width:0.8vw;
+  position: absolute;
+  top:18px;
+  left:84%;
+  height:0.8vw;
+}
+
+
 
 #search{
   position: relative;
@@ -291,7 +377,7 @@ input{
   width:1.3%;
   height:2px;
   position: absolute;
-  left:22.7%;
+  left:25.2%;
   bottom:3%;
   border-radius: 40px;
   background-color: grey;
