@@ -37,9 +37,14 @@ gsap.from('.page3',{
 var mypc=document.querySelector('.thispc');
 var screen=document.querySelector('.mycomputer');
 var close=document.querySelector('.close');
+var fullscreen=document.querySelector('.ri-checkbox-blank-line');
+var originalscreen=document.querySelector('.ri-checkbox-multiple-blank-line')
+var opened=document.querySelector('.fmopened');
+
 
 mypc.addEventListener('dblclick',function(){
   screen.style.display='initial'
+  opened.style.display='initial'
   gsap.from('.mycomputer',{
     scale:0,
     duration:.5,
@@ -50,5 +55,21 @@ mypc.addEventListener('dblclick',function(){
 })
 
 close.addEventListener('click',function(){
-  screen.style.display='none'
+  screen.style.display='none';
+  opened.style.display='none'
+})
+
+fullscreen.addEventListener('click',function(){
+  screen.style.width='100%';
+  screen.style.height='100%';
+  screen.style.zIndex=999;
+  fullscreen.style.display='none'
+  originalscreen.style.display='initial'
+})
+
+originalscreen.addEventListener('click',function(){
+  screen.style.width='75%';
+  screen.style.height='75%';
+  fullscreen.style.display='initial';
+  originalscreen.style.display='none'
 })
