@@ -36,3 +36,26 @@ Windows10/
 
 ```
 
+## 🚀 Getting Started
+
+To run this project locally:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/Prateek-Lohani/Windows10.git
+   cd Windows10
+   ```
+
+2. **Open `index.html` in your browser**:
+
+   No additional setup is required as this is a static project.
+
+---
+
+## 🌐 Deployment
+
+The project is deployed on Netlify and can be accessed via the [live demo link](https://windows10-clone.netlify.app/).
+
+---
+
